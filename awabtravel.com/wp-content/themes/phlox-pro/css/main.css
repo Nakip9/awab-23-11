@@ -41496,3 +41496,51 @@ aside.aux-dark .aux-slide-title h3 {
         right: auto;
     }
 }
+/* Subtle visual refinements for interactive elements */
+.aux-button {
+    border-radius: 12px;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.aux-button:hover,
+.aux-button:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+
+.aux-button:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 131, 143, 0.28);
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.btn:hover,
+.btn:focus-visible,
+button:hover,
+button:focus-visible,
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible,
+input[type="button"]:hover,
+input[type="button"]:focus-visible {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+}
+
+.btn:focus-visible,
+button:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="button"]:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 131, 143, 0.24);
+}
+
+/* Support smoother page navigation without altering layout */
+html {
+    scroll-behavior: smooth;
+}
